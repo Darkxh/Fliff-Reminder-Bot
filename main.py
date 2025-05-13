@@ -1,10 +1,12 @@
 import discord
 from discord.ext import tasks, commands
 import os
+from dotenv import load_dotenv
 import datetime
 
+load_dotenv
 ##Replace this with your bot token
-TOKEN = 'MTM3MTY3NTU1MTQ2NjY1MTczMA.Gu9lHX.b6_E35u-BMBkACJzmgI3LKJGM-XpL47vArxTys'
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 ##Set your prefix and intents
 intents = discord.Intents.default()
