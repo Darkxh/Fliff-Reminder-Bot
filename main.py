@@ -4,8 +4,7 @@ import os
 from dotenv import load_dotenv
 import datetime
 
-load_dotenv
-##Replace this with your bot token
+load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 ##Set your prefix and intents
